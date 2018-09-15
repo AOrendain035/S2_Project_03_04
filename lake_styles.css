@@ -1,0 +1,129 @@
+﻿@charset "utf-8";
+/* Underneath, I have set up the champagne and dobkin fonts so that they will be avaialbe for future use in the code. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf')format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Alexander Orendain 
+   Date: 9.14.18   
+   
+   Filename: lake_styles.css
+*/
+
+/* Structural Styles */
+/* In this block of code, I have set the initial html and body background colors. The orangey color seemed to make the ivory color of the body pop out more. I also gave the footer a certain color that seemed to compliment the html color and provide a smooth connection that ties all the colors together. Finally, I edited them image to move it a little bit more to the left so it doen't touch the edges. */
+html {
+    background-color: rgb(212, 151, 37)
+}
+
+body {
+    background-color: ivory;
+}
+
+footer {
+    background-color: rgba(165, 42, 42, 0.432);
+    text-align: center;
+}
+
+section#leftcol img {
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+/* Heading Styles */
+/* Underneath, I have applied the Dobkin and Champagne fonts to the h1 and h2 headings. I have also changed the font sizes for the h1 and h2 headings and set dimensions for the h1 headings. */
+h1,
+h2 {
+    font-family: Dobkin, Champagne;
+}
+
+h1 {
+    margin-top: 19.20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 19.20px;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+
+/* Navigation Styles */
+/* In this block of code I have done things such as give background colors, text colors, and text sizes to certain elements in the nav. A more specific example of what I've done, is changed the links so when one clicks or hovers over a link, it changes colors. */
+nav>ul {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+nav {
+    background-color: lavender;
+}
+
+header>nav a {
+    background-color: rgba(165, 42, 42, 0.432);
+    font-size: 1.4em;
+}
+
+nav>ul>li>a:link,
+ nav>ul>li>a:visited {
+     text-decoration: none;
+     color: rgb(248, 60, 27);
+ }
+ 
+ nav>ul>li>a:active,
+ nav>ul>li>a:hover {
+     color: rgb(205, 161, 223);
+ }
+/* Article Styles */
+p {
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+/* Aside Styles */
+/* Underneath, I have changed the font sizes of the h1s, h2s, and p tags in the aside from descending order. With h1 being the biggest and p tags being the smallest. I have also gave the aside a pale green background color that nicely contrasts with the warm colors on the page.  */
+section#leftcol aside {
+    background-color: palegreen;
+}
+
+aside>p {
+    font-size: 1em;
+}
+
+aside>h1 {
+    font-size: 2.5em;
+}
+
+aside>h2 {
+    font-size: 2em;
+}
+
+/* Blockquote Styles */
+/* Finally, for the blockquote I have given it a redish brick background color with a white text background color that blends with the other warm colors. I also changed the dimensions of the blockquote to make it a bit wider. */
+blockquote {
+    background-color: rgba(247, 25, 25, 0.575);
+    color: white;
+ }
+ 
+ blockquote p {
+     padding-top: 3.5px;
+     padding-bottom: 3.5px;
+     padding-left: 11px;
+     padding-right: 11px;
+ }
